@@ -1,5 +1,3 @@
-#![feature(duration_constructors_lite)]
-
 use rocket::{launch, routes};
 use rocket::fs::FileServer;
 use rocket_dyn_templates::Template;
