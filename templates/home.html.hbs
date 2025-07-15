@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoneko</title>
+</head>
+<body>
+<div class="main_wrapper_home">
+    <div class="pomodoro_col">
+        <div class="character-bar">
+            <span class="name"></span>
+            <div class="xp_bar">
+                <span class="level"></span>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="pomodoro_timer">
+            <span class="pomodoro_timer_header">Pomodoro Timer</span>
+            <div class="pomodoro_timer_content">
+                <div class="pomodoro_status_control">
+                    <span style="width: 21px"></span>
+                    <span id="pomodoro_timer_status">
+                        Ready for Working Phase 1
+                    </span>
+                    <button id="pomodoro_control_next_interval">
+                    </button>
+                </div>
+                <div class="pomodoro_clock">
+                    <span id="pomodoro_clock_minutes1">2</span>
+                    <span id="pomodoro_clock_minutes2">5</span>
+
+                    <span id="pomodoro_clock_divider">
+                    </span>
+
+                    <span id="pomodoro_clock_seconds1">0</span>
+                    <span id="pomodoro_clock_seconds2">0</span>
+                </div>
+                <div class="pomodoro_timer_controls">
+                    <button id="pomodoro_timer_controls_start"></button>
+                    <button id="pomodoro_timer_controls_pause" class="hide"></button>
+                    <button id="pomodoro_timer_controls_cancel" class="hide"></button>
+                </div>
+            </div>
+        </div>
+        <div class="settings expanded">
+            <span class="settings_header">Settings</span>
+            <div class="settings_content">
+                <button id="settings_sound_off" class="hide">Sound off</button><button id="settings_sound_on">Sound on</button>
+                <button id="settings_notifications_off" class="hide">Notifications disabled</button><button id="settings_notifications_on">Notifications enabled</button>
+                <hr style="width: 100%;">
+                <div>
+                    <input type="number" id="settings_pomodoro_work_interval">
+                    <label for="settings_pomodoro_work_interval">Work Interval in Minutes</label>
+                </div>
+                <div>
+                    <input type="number" id="settings_pomodoro_short_break_interval">
+                    <label for="settings_pomodoro_short_break_interval">Short Break Interval in Minutes</label>
+                </div>
+                <div>
+                    <input type="number" id="settings_pomodoro_long_break_interval">
+                    <label for="settings_pomodoro_long_break_interval">Long Break Interval in Minutes</label>
+                </div>
+                <div>
+                    <input type="number" id="settings_pomodoro_num_of_intervals_before_long_break">
+                    <label for="settings_pomodoro_num_of_intervals_before_long_break">Number of work intervals before long break</label>
+                </div>
+                <button id="settings_save">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="living_room">
+        <!-- Cat trees -->
+        <div class="cat_tree">
+            <div class="cat_tree_left">
+            </div>
+            <div class="trunks">
+                <div class="trunk"></div>
+                <div class="trunk-base"></div>
+            </div>
+            <div class="cat_tree_right">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a href="/imprint">Imprint & Privacy Policy</a>
+</div>
+
+</body>
+<script src="/assets/js/bundle.js"></script>
+</html>
